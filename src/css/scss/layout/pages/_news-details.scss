@@ -1,0 +1,323 @@
+.news-details {
+    h3 {
+        color: $medium-drak;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .admin {
+        display: flex;
+        align-items: center;
+        padding-bottom: 40px;
+
+        img {
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 60px;
+            height: auto;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+    }
+
+    @at-root {
+        .extra {
+            margin-top: 30px;
+
+            p:first-letter {
+                font-size: 100px;
+                float: left;
+                line-height: 1;
+                color: $medium-drak;
+                text-transform: capitalize;
+                padding: 10px;
+                padding-left: 0;
+            }
+        }
+
+        .list-style {
+            padding-top: 30px;
+
+            li {
+                padding-bottom: 14px;
+                padding-left: 27px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: linear-gradient(to right, #ed2b46, #ec4d25);
+                    width: 12px;
+                    height: 12px;
+                    top: 5px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.blog-quotes {
+    padding: 55px;
+    background-position: left;
+    margin-top: 25px;
+    position: relative;
+
+    @include respond-to("lg") {
+        margin-bottom: 40px;
+    }
+
+    @include respond-to("sm") {
+        padding: 30px;
+    }
+
+    &::before {
+        @include content(1);
+        background-image: linear-gradient(to right, #ed2b46, #ec4d25);
+    }
+
+    h3 {
+        font-size: 36px;
+        padding-bottom: 22px;
+        line-height: 46px;
+        color: $white-colour;
+        position: relative;
+
+        @include respond-to("xxl") {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        @include respond-to("md") {
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+
+    h4 {
+        z-index: 11;
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        color: $white-colour;
+    }
+}
+
+.video-blog {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    img {
+        @include respond-to("xxl") {
+            width: 100%;
+        }
+    }
+
+    a.video-pop {
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            border: 1px solid $medium-drak;
+            outline: 3px solid $theme-colour;
+        }
+    }
+
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    ul.social-icon {
+        margin-left: 30px;
+
+        i {
+            border: 1px solid #d3dbd7;
+            color: #000000;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.journal {
+    margin-top: 40px;
+    @include flexcenter;
+    justify-content: space-between;
+
+    a {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        @include respond-to("xxl") {
+            font-size: 20px;
+        }
+
+        @include respond-to("lg") {
+            font-size: 18px;
+        }
+
+        @include respond-to("md") {
+            font-size: 16px;
+        }
+
+        @include respond-to("smm") {
+            font-size: 14px;
+        }
+
+        i {
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        &:hover {
+            color: $second-color;
+        }
+    }
+}
+
+.comment {
+    padding-top: 60px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $drak-color;
+
+        @include respond-to("md") {
+            font-size: 26px;
+        }
+
+        @include respond-to("sm") {
+            font-size: 22px;
+        }
+    }
+
+    li {
+        display: flex;
+        padding: 15px;
+        position: relative;
+        margin-top: 30px;
+        border: 1px solid #d3dbd7;
+        align-items: center;
+
+        @include respond-to("lg") {
+            flex-wrap: wrap;
+        }
+
+        img {
+            position: relative;
+            object-fit: cover;
+        }
+
+        a {
+            color: $white-colour;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-weight: 600;
+            padding: 5px 12px;
+            font-size: 14px;
+            background-image: linear-gradient(to right, #ed2b46, #ec4d25, #ed2b46, #ec4d25);
+            border-radius: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .comment-data {
+            padding: 20px;
+            padding-left: 30px;
+
+            @include respond-to("md") {
+                padding-left: 0;
+            }
+
+            h4 {
+                font-size: 24px;
+                font-weight: bold;
+                display: inline;
+
+                @include respond-to("md") {
+                    font-size: 20px;
+                }
+            }
+
+            span {
+                padding-left: 10px;
+                font-size: 16px;
+                color: $second-color;
+            }
+        }
+    }
+
+    li.reply-comment {
+        margin-left: 103px;
+        width: 89%;
+
+        @include respond-to("xxl") {
+            margin-left: 50px;
+            width: 94%;
+        }
+
+        @include respond-to("md") {
+            margin-left: 00px;
+            width: 100%;
+        }
+    }
+}
+
+.leave {
+    margin-top: 23px;
+
+    input {
+        width: 100%;
+        height: 60px;
+        padding-left: 25px;
+        border-radius: 0px;
+        border: 1px solid #c1c1c1;
+        outline: none;
+
+        @include respond-to("md") {
+            margin-bottom: 10px;
+        }
+    }
+
+    input,
+    input::placeholder {
+        color: #555;
+    }
+
+    textarea {
+        width: 100%;
+        height: 180px;
+        margin-top: 20px;
+        border: 1px solid #c1c1c1;
+        outline: none;
+        color: #555;
+        padding-top: 25px;
+        border-radius: 0;
+
+        @include respond-to("md") {
+            margin-top: 0;
+        }
+    }
+}

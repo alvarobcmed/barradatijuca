@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "flaticon_mycollection";
+  src: url("./flaticon_mycollection.woff2?6bf174e2f2133f1bfa326e617bdf2f5e") format("woff2"), url("./flaticon_mycollection.woff?6bf174e2f2133f1bfa326e617bdf2f5e") format("woff"), url("./flaticon_mycollection.eot?6bf174e2f2133f1bfa326e617bdf2f5e#iefix") format("embedded-opentype"), url("./flaticon_mycollection.ttf?6bf174e2f2133f1bfa326e617bdf2f5e") format("truetype"), url("./flaticon_mycollection.svg?6bf174e2f2133f1bfa326e617bdf2f5e#flaticon_mycollection") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon_mycollection !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-location:before {
+  content: "\f101";
+}
+
+.flaticon-search:before {
+  content: "\f102";
+}
+
+.flaticon-facebook:before {
+  content: "\f103";
+}
+
+.flaticon-twitter:before {
+  content: "\f104";
+}
+
+.flaticon-instagram:before {
+  content: "\f105";
+}
+
+.flaticon-paper-plane:before {
+  content: "\f106";
+}
+
+.flaticon-calendar:before {
+  content: "\f107";
+}
+
+.flaticon-comment:before {
+  content: "\f108";
+}
+
+.flaticon-right-arrow:before {
+  content: "\f109";
+}
+
+.flaticon-pinterest:before {
+  content: "\f10a";
+}
+
+.flaticon-iphone:before {
+  content: "\f10b";
+}
+
+.flaticon-mail-inbox-app:before {
+  content: "\f10c";
+}
+
+.flaticon-share:before {
+  content: "\f10d";
+}
+
+.flaticon-quotation-mark:before {
+  content: "\f10e";
+}
+
+.flaticon-plus:before {
+  content: "\f10f";
+}
+
+.flaticon-smart-phone:before {
+  content: "\f110";
+}
+
+.flaticon-dots:before {
+  content: "\f111";
+}
+
+.flaticon-pin:before {
+  content: "\f112";
+}
+
+.flaticon-love:before {
+  content: "\f113";
+}
+
+.flaticon-iphone-1:before {
+  content: "\f114";
+}
+
+.flaticon-envelope:before {
+  content: "\f115";
+}
+
+.flaticon-time:before {
+  content: "\f116";
+}
+
+.flaticon-tick:before {
+  content: "\f117";
+}
+
+.flaticon-electronics:before {
+  content: "\f118";
+}
+
+.flaticon-call:before {
+  content: "\f119";
+}
+
+.flaticon-call-1:before {
+  content: "\f11a";
+}
+
+.flaticon-smart-watch:before {
+  content: "\f11b";
+}
+
+.flaticon-iphone-charger:before {
+  content: "\f11c";
+}
+
+.flaticon-voice-bot:before {
+  content: "\f11d";
+}
+
+.flaticon-form:before {
+  content: "\f11e";
+}
+
+.flaticon-successful:before {
+  content: "\f11f";
+}
+
+.flaticon-google:before {
+  content: "\f120";
+}
+
+.flaticon-technology:before {
+  content: "\f121";
+}
+
+.flaticon-camera-drone:before {
+  content: "\f122";
+}
+
+.flaticon-remote-control:before {
+  content: "\f123";
+}
+
+.flaticon-thunderbolt:before {
+  content: "\f124";
+}
+
+.flaticon-logo:before {
+  content: "\f125";
+}
+
+.flaticon-price-up:before {
+  content: "\f126";
+}
+
+.flaticon-cyber-security:before {
+  content: "\f127";
+}
+
+.flaticon-live-chat:before {
+  content: "\f128";
+}
+
+.flaticon-customer-service:before {
+  content: "\f129";
+}
+
+.flaticon-cross-functional:before {
+  content: "\f12a";
+}
+
+.flaticon-creative-thinking:before {
+  content: "\f12b";
+}
+
+.flaticon-function:before {
+  content: "\f12c";
+}
+
+.flaticon-user-experience:before {
+  content: "\f12d";
+}
+
+.flaticon-view:before {
+  content: "\f12e";
+}
+
+.flaticon-data:before {
+  content: "\f12f";
+}
+
+.flaticon-apple:before {
+  content: "\f130";
+}
+
+.flaticon-google-play:before {
+  content: "\f131";
+}
+
+.flaticon-mobile-development:before {
+  content: "\f132";
+}
+
+.flaticon-battery:before {
+  content: "\f133";
+}
+
+.flaticon-car:before {
+  content: "\f134";
+}
+
+.flaticon-bolt:before {
+  content: "\f135";
+}/*# sourceMappingURL=flaticon_mycollection.css.map */

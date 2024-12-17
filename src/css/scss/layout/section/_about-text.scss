@@ -1,0 +1,126 @@
+.about-text {
+    h4 {
+        border-bottom: 3px solid $second-color;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    ul {
+        li {
+            font-size: 18px;
+            padding-bottom: 12px;
+
+            @include respond-to("xxl") {
+                font-size: 16px;
+            }
+
+            i {
+                color: $second-color;
+                padding-right: 14px;
+            }
+        }
+    }
+
+    .about-text {
+        @include respond-to("lg") {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.about-text p {
+    z-index: 11;
+    position: relative;
+}
+
+body.three {
+    .about-text {
+        h4 {
+            border-bottom: 3px solid $theme3-colour;
+        }
+
+        ul {
+            li {
+                i {
+                    color: $theme3-colour;
+                }
+            }
+        }
+    }
+}
+
+.about-conter {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 26px;
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        padding-bottom: 6px;
+
+        @include respond-to("xxl") {
+            font-size: 24px;
+        }
+    }
+
+    .count-text h2 {
+        font-size: 90px;
+        font-weight: bold;
+        color: $second-color;
+
+        @include respond-to("xxl") {
+            font-size: 68px;
+        }
+
+        @include respond-to("sm") {
+            font-size: 60px;
+        }
+    }
+}
+
+.about-conter.two {
+    border: 0;
+    margin-bottom: 0;
+
+    @include respond-to("xl") {
+        border: 0;
+        margin-bottom: 50px;
+    }
+
+    @include respond-to("lg") {
+        border: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.about-img {
+    img {
+        transform: translateX(-120px);
+        margin-top: 30px;
+
+        @include respond-to("xxl") {
+            transform: translateX(-68px);
+            margin-top: 103px;
+            width: 130%;
+        }
+
+        @include respond-to("xl") {
+            display: none;
+        }
+    }
+}
+
+#about {
+    .about-text {
+        @include respond-to("lg") {
+            padding-bottom: 40px;
+        }
+    }
+}

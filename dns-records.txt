@@ -1,0 +1,21 @@
+# Nameservers do Netlify
+dns1.p01.nsone.net
+dns2.p01.nsone.net
+dns3.p01.nsone.net
+dns4.p01.nsone.net
+
+# Registros DNS
+A api.stry.live 143.198.67.134 # IP do servidor da API
+CNAME www.stry.live stry.live # Alias para domínio principal
+CNAME stry.live stry-live.netlify.app # Domínio principal apontando para Netlify
+
+# Registros SPF e DMARC para email
+TXT @ "v=spf1 include:_spf.google.com ~all"
+TXT _dmarc "v=DMARC1; p=quarantine; rua=mailto:dmarc@stry.live"
+
+# Registros MX para email
+MX @ 1 aspmx.l.google.com
+MX @ 5 alt1.aspmx.l.google.com
+MX @ 5 alt2.aspmx.l.google.com
+MX @ 10 alt3.aspmx.l.google.com
+MX @ 10 alt4.aspmx.l.google.com

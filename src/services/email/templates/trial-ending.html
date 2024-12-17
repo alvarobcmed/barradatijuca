@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Seu Período de Teste está Acabando</h1>
+
+<p>Olá {{name}},</p>
+
+<p>Seu período de teste gratuito termina em {{days_remaining}} dias.</p>
+
+<div style="background: #F3F4F6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+  <h3 style="margin-top: 0;">Resumo do Uso</h3>
+  <p><strong>Stories publicados:</strong> {{stories_count}}</p>
+  <p><strong>Visualizações totais:</strong> {{views_count}}</p>
+  <p><strong>Taxa de engajamento:</strong> {{engagement_rate}}%</p>
+</div>
+
+<p>Para continuar usando o Stry Live sem interrupção, escolha seu plano:</p>
+
+<a href="https://stry.live/pricing" class="button">Escolher Plano</a>
+
+<p>Tem dúvidas? Nossa equipe está à disposição para ajudar!</p>
+{% endblock %}

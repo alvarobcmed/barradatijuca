@@ -1,0 +1,92 @@
+.watch-features {
+    position: relative;
+    background-repeat: no-repeat;
+    margin-bottom: 190px;
+
+    @include respond-to("xl") {
+        margin-bottom: 40px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        left: 0;
+        top: 0;
+        background-color: $drak-color;
+    }
+
+    .heading {
+        padding-bottom: 0;
+
+        h2,
+        span {
+            color: $white-colour;
+        }
+
+        img {
+            transform: translatey(70px);
+            margin-bottom: -120px;
+
+            @include respond-to("xl") {
+                transform: translatey(40px);
+                margin-bottom: 0px;
+                width: 100%;
+            }
+        }
+    }
+
+    .video {
+        margin-bottom: 100px;
+        color: $white-colour;
+
+        @include respond-to("md") {
+            margin-bottom: 40px;
+            margin-top: 100px;
+        }
+
+        a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+
+        i {
+            top: -60px;
+            background-image: none;
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+
+        margin-bottom: 70px;
+        color: #ffffff;
+        margin-top: 100px;
+
+    }
+}
+
+.watch-features.three {
+    margin-bottom: 0;
+    padding-top: 160px;
+    padding-bottom: 120px;
+
+    @include respond-to("lg") {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to("mdd") {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    &::before {
+        opacity: .7;
+        background-color: #15174c;
+    }
+}

@@ -1,0 +1,122 @@
+ .btn {
+     padding: 17px 46px;
+     font-size: 16px;
+     font-weight: 600;
+     color: #fff;
+     cursor: pointer;
+     text-align: center;
+     border: none;
+     background-size: 300% 100%;
+     border-radius: 50px;
+     transition: all .4s ease-in-out;
+     background-image: linear-gradient(to right, #ed2b46, #ec4d25, #ed2b46, #ec4d25);
+     text-transform: capitalize;
+
+     @include respond-to("sm") {
+         padding: 17px 30px;
+     }
+ }
+
+ .btn:hover {
+     color: #fff;
+     background-position: 100% 0;
+     transition: all .4s ease-in-out;
+ }
+
+ body.two {
+     .btn {
+         text-transform: capitalize;
+         border-radius: 50px;
+         line-height: 16px;
+         overflow: hidden;
+         padding: 19px 48px;
+         position: relative;
+         font-weight: 700;
+         text-align: center;
+         white-space: pre;
+         z-index: 1;
+         border: 0;
+         color: $drak-color ;
+         background-color: $theme2-colour;
+         background-image: none;
+
+         &::after {
+             background-color: $white-colour;
+             border-radius: 50%;
+             content: '';
+             height: 167px;
+             min-width: 167px;
+             position: absolute;
+             top: 100%;
+             transition: transform .7s cubic-bezier(.66, .00, .34, 1.00);
+             width: 100%;
+             z-index: -1;
+             left: 0;
+         }
+
+         &:hover {
+             &::after {
+                 transform: scale(2.47) translateY(0);
+                 top: 100%;
+             }
+         }
+     }
+
+ }
+
+ body.three {
+     .btn {
+         text-transform: capitalize;
+         border-radius: 50px;
+         line-height: 16px;
+         overflow: hidden;
+         padding: 19px 48px;
+         position: relative;
+         font-weight: 700;
+         text-align: center;
+         white-space: pre;
+         z-index: 1;
+         border: 0;
+         background-color: $theme3-colour;
+         background-image: none;
+
+         @include respond-to("lg") {
+             padding: 14px 40px;
+             font-size: 14px;
+         }
+
+         &::after {
+             background-color: $white-colour;
+             border-radius: 50%;
+             content: '';
+             height: 167px;
+             min-width: 167px;
+             position: absolute;
+             top: 100%;
+             transition: transform .7s cubic-bezier(.66, .00, .34, 1.00);
+             width: 100%;
+             z-index: -1;
+             left: 0;
+         }
+
+         &:hover {
+             color: $drak-color;
+
+             &::after {
+                 transform: scale(2.47) translateY(0);
+                 top: 100%;
+             }
+         }
+     }
+
+ }
+
+ body.two .btn-center .btn:after,
+ body.three .btn-center .btn:after {
+     background-color: #000000;
+ }
+
+ body.three .btn-center .btn:hover,
+ body.two .btn-center .btn:hover {
+     color: #fff;
+ }

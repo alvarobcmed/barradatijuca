@@ -1,0 +1,16 @@
+.partner {
+    text-align: center;
+}
+
+.partner.hover-img-two {
+    .imgg {
+        img {
+            width: auto;
+            margin: auto;
+
+            @include respond-to("xxl") {
+                width: 130px;
+            }
+        }
+    }
+}

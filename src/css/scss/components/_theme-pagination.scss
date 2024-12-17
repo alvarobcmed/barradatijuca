@@ -1,0 +1,109 @@
+.theme-pagination {
+    .pagination {
+        justify-content: center;
+    }
+
+    margin-top: 60px;
+
+    ul.pagination {
+        li {
+            a {
+                font-size: 16px;
+                font-weight: bold;
+                color: $drak-color;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 !important;
+                border: 0;
+                width: 55px;
+                margin-right: 5px;
+                background-color: #f4f4f4;
+
+                @include respond-to("mdd") {
+                    font-size: 14px;
+                    height: 40px;
+                    width: 42px;
+                    margin-right: 2px;
+                }
+
+                &:hover {
+                    color: $white-colour;
+                    background-color: $medium-drak;
+                }
+
+                i {
+                    font-size: 15px;
+                }
+            }
+
+            &:first-child {
+                a {
+                    padding: 0 45px;
+                    background-color: $theme-colour;
+                    color: $white-colour;
+                    border: 1px solid $theme-colour;
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    @include respond-to("sm") {
+                        padding: 0 25px;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+
+                margin-right: 1px;
+            }
+
+            &:last-child {
+                a {
+                    padding: 0 45px;
+                    background-color: $theme-colour;
+                    color: $white-colour;
+                    border: 1px solid $theme-colour;
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    @include respond-to("sm") {
+                        padding: 0 25px;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+
+                margin-left: 1px;
+            }
+        }
+
+        li.space {
+            a {
+                cursor: not-allowed;
+                border: 0;
+                background-color: transparent;
+                color: $drak-color;
+
+                &:hover {
+                    cursor: not-allowed;
+                    border: 0;
+                    background-color: transparent;
+                    color: $drak-color;
+                }
+            }
+        }
+    }
+}
+
+.btn-center {
+    text-align: center;
+    margin-top: 60px;
+}

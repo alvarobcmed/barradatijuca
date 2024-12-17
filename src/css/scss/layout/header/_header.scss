@@ -1,0 +1,107 @@
+/* 01. header */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+
+    &.slideDown {
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        .top-bar {
+            ul li a {
+                color: #000;
+            }
+
+            .login .btn {
+                background: linear-gradient(135deg, #6B0F6C, #FF0A7B);
+                color: #fff;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        .logo {
+            img {
+                @include respond-to("xxl") {
+                    width: 120px;
+                }
+
+                @include respond-to("smm") {
+                    width: 140px;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            @include respond-to("xl") {
+                display: none;
+            }
+
+            li {
+                padding: 0 25px;
+
+                a {
+                    font-weight: 600;
+                    color: #fff;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    font-size: 16px;
+                    text-decoration: none;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background: currentColor;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .login {
+            .btn {
+                padding: 12px 24px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: #fff;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.3);
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+}

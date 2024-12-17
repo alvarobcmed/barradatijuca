@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Confirmação de Cancelamento</h1>
+
+<p>Olá {{name}},</p>
+
+<p>Confirmamos o cancelamento da sua assinatura do Stry Live.</p>
+
+<div style="background: #F3F4F6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+  <h3 style="margin-top: 0;">Detalhes do Cancelamento</h3>
+  <p><strong>Data de término:</strong> {{end_date}}</p>
+  <p><strong>Acesso até:</strong> {{access_until}}</p>
+</div>
+
+<p>Você ainda terá acesso a todos os recursos até o fim do período pago.</p>
+
+<p>Sentiremos sua falta! Se mudar de ideia, você pode reativar sua conta a qualquer momento:</p>
+
+<a href="https://stry.live/reactivate" class="button">Reativar Assinatura</a>
+
+<p>Poderia nos ajudar respondendo uma breve pesquisa sobre o motivo do cancelamento?</p>
+
+<a href="{{feedback_url}}" style="color: #6B0F6C;">Responder Pesquisa</a>
+{% endblock %}

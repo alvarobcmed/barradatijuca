@@ -1,0 +1,332 @@
+.hero-section {
+    background-color: $theme-colour;
+    padding-top: 227px;
+    padding-bottom: 45px;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+
+    @include respond-to("xxl") {
+        padding-top: 180px;
+        padding-bottom: 30px;
+    }
+
+    @include respond-to("lg") {
+        padding-top: 150px;
+    }
+
+    .btnvideo {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        @include respond-to("sm") {
+            gap: 12px;
+        }
+
+        .video {
+            margin: 0;
+
+            @include respond-to("sm") {
+                margin: 0px;
+                margin-left: 30px;
+            }
+
+            i {
+                animation: shadow-pulse 1s infinite;
+                width: 74px;
+                height: 74px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-image: none;
+                border: 1px solid $white-colour;
+            }
+
+
+            svg {
+                fill: $white-colour;
+            }
+        }
+    }
+
+    img.shap1 {
+        @include respond-to("xxl") {
+            bottom: 6%;
+            left: 1%;
+        }
+    }
+
+    @keyframes shadow-pulse {
+        0% {
+            box-shadow: 0 0 0 0px rgb(255 255 255);
+        }
+
+        100% {
+            box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+        }
+    }
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        width: 865px;
+        height: 865px;
+        background-image: linear-gradient(180deg, #ec4d25, #ed2a47);
+        border-radius: 50%;
+        right: 6%;
+        top: -2%;
+
+        @include respond-to("xxl") {
+            width: 724px;
+            height: 724px;
+            right: 2%;
+        }
+
+        @include respond-to("xl") {
+            width: 670px;
+            height: 673px;
+            right: 2%;
+        }
+
+        @include respond-to("lg") {
+            display: none;
+        }
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 11;
+
+        >span {
+            color: $white-colour;
+            border: 1px solid $white-colour;
+            border-radius: 50px;
+            padding: 10px 30px;
+
+            @include respond-to("xl") {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+
+        h1 {
+            color: $white-colour;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 88px;
+            margin-bottom: 0;
+
+            @include respond-to("xxl") {
+                padding-top: 20px;
+                padding-bottom: 10px;
+                font-size: 72px;
+                line-height: 82px;
+            }
+
+            @include respond-to("lg") {
+                letter-spacing: 2px;
+            }
+
+            @include respond-to("mdd") {
+                font-size: 60px;
+                line-height: 70px;
+            }
+
+            @include respond-to("sm") {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            color: $white-colour;
+            line-height: 36px;
+            padding-bottom: 40px;
+
+            @include respond-to("xxl") {}
+        }
+    }
+
+    .hero-img {
+        img {
+            transform: translateX(-122px);
+
+            @include respond-to("xxl") {
+                width: 122%;
+            }
+
+            @include respond-to("lg") {
+                width: 100%;
+                margin-top: 50px;
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    .price {
+        width: 210px;
+        height: 210px;
+        background-color: #fff;
+        border-radius: 50%;
+        padding-top: 40px;
+        text-align: center;
+        position: absolute;
+        bottom: -14%;
+        right: 8%;
+
+        @include respond-to("lg") {
+            bottom: 2%;
+        }
+
+        @include respond-to("md") {
+            width: 160px;
+            height: 160px;
+            padding-top: 25px;
+        }
+
+        @include respond-to("sm") {
+            width: 140px;
+            height: 140px;
+            padding-top: 16px;
+            bottom: -8%;
+        }
+
+        span {
+            font-size: 23px;
+            font-weight: bold;
+
+            @include respond-to("md") {
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+
+        h5 {
+            font-size: 72px;
+            line-height: 60px;
+            padding-top: 6px;
+            color: $second-color;
+            font-weight: 700;
+
+            @include respond-to("md") {
+                font-size: 60px;
+                line-height: 46px;
+                padding-top: 6px;
+            }
+
+            @include respond-to("sm") {
+                font-size: 50px;
+                line-height: 40px;
+                padding-top: 6px;
+            }
+
+            sup {
+
+                font-size: 40px;
+
+                @include respond-to("md") {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        del {
+            font-size: 30px;
+            font-weight: bold;
+
+            @include respond-to("md") {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .hero-img {
+        position: relative;
+    }
+
+    @at-root {
+        .google-star {
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+
+            @include respond-to("xxl") {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+
+                @include respond-to("sm") {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+
+                @include respond-to("mdd") {
+                    margin-right: 20px;
+                    gap: 20px;
+                }
+            }
+
+            img {
+                filter: invert(1);
+            }
+
+            ul {
+                display: flex;
+                padding-left: 20px;
+                gap: 5px;
+                color: #fff;
+
+                @include respond-to("sm") {
+                    padding-left: 0;
+                }
+
+                li {
+                    >i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img.shap1 {
+    animation: shap-rotate 25s infinite;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+
+    @include respond-to("xxl") {
+        width: 100px;
+    }
+
+    @include respond-to("mdd") {
+        display: none;
+    }
+}
+
+@keyframes shap-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

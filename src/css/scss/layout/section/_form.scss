@@ -1,0 +1,204 @@
+form#contact-form h3 {
+    font-size: 40px;
+    color: $white-colour;
+    font-weight: 700;
+    line-height: 46px;
+    padding-bottom: 6px;
+
+    @include respond-to("smm") {
+        font-size: 32px;
+    }
+}
+
+.get-a-quote {
+    margin-bottom: 16px;
+    background-color: $theme-colour;
+    padding: 54px;
+    position: relative;
+    padding-top: 60px;
+    z-index: 11;
+
+    &:hover {
+        >i {
+            &:before {
+                animation: top-bottom 1s infinite;
+            }
+        }
+    }
+
+    @include respond-to("xxl") {
+        padding: 40px;
+    }
+
+    @include respond-to("lg") {
+        margin-top: 80px;
+    }
+
+    @include respond-to("smm") {
+        padding: 20px;
+    }
+
+    >i {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        background-image: linear-gradient(90deg, #ed2b46, #ec4c26);
+        font-size: 50px;
+        border-radius: 50%;
+        top: -8%;
+        right: 5%;
+        color: #fff;
+        @include flexcenter;
+
+        @include respond-to("smm") {
+            width: 84px;
+            height: 84px;
+            font-size: 40px;
+        }
+    }
+
+    h6 {
+        color: $white-colour;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 29px;
+    }
+
+    p {
+        font-weight: bold;
+        color: $white-colour;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    input,
+    input[type="number"] {
+        width: 100%;
+        height: 55px;
+        border: 0;
+        outline: 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: $white-colour;
+        border-radius: 45px;
+        padding: 25px;
+        border: 1px solid $white-colour;
+        background-color: transparent;
+
+    }
+
+
+    input::placeholder,
+    input[type="number"]::placeholder {
+        color: $white-colour;
+    }
+
+    .radio-button {
+        margin-right: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        align-items: center;
+        display: flex;
+        margin-bottom: 35px;
+        align-items: normal;
+
+        @include respond-to("xxl") {
+            margin-bottom: 26px;
+        }
+
+        @include respond-to("lg") {
+            margin-bottom: 10px;
+        }
+
+        label {
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: $white-colour;
+        }
+
+        input {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+.video {
+    position: relative;
+    margin-top: 30px;
+
+    @include respond-to("lg") {
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+        box-shadow: 0px 25px 56px -22px rgba(176, 176, 176, 0.75);
+        object-fit: cover;
+
+        @include respond-to("mdd") {
+            height: 250px;
+        }
+    }
+
+    i {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 90px;
+        height: 90px;
+        @include flexcenter;
+        background-image: linear-gradient(90deg, #ed2b46, #ec4c26);
+        animation: shadow-pulse 1s infinite;
+        border-radius: 50%;
+    }
+}
+
+body.two {
+    .get-a-quote {
+        background-color: $drak-color;
+        padding-top: 37px;
+        margin-bottom: 0;
+
+        >i {
+            background-image: none;
+            background-color: $theme2-colour;
+            color: $drak-color;
+        }
+
+        .radio-button {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+body.three {
+    .get-a-quote {
+        background-color: #15174c;
+        padding-top: 37px;
+
+        >i {
+            background-image: none;
+            background-color: $theme3-colour;
+        }
+
+        .radio-button {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#contact {
+    position: relative;
+
+    img.shap1 {
+        bottom: 32%;
+        left: 84%;
+    }
+}

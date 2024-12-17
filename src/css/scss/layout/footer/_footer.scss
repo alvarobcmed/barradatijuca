@@ -1,0 +1,279 @@
+footer {
+    background-color: $theme-colour;
+    position: relative;
+
+    img.shap1 {
+        width: 80px;
+    }
+
+    .heading.two {
+        padding-bottom: 30px;
+        width: 90% !important;
+        margin: 0;
+
+        @include respond-to("xl") {
+            width: 100% !important;
+        }
+
+        h4,
+        p {
+            color: #fff;
+        }
+    }
+
+    form#subscribe-form {
+        width: 90% !important;
+        position: relative;
+
+        @include respond-to("xl") {
+            width: 100% !important;
+        }
+
+        input {
+            background-color: #ffffff17;
+            border: 1px solid $white-colour;
+            border-radius: 51px;
+            color: $white-colour;
+        }
+
+        input::placeholder {
+            color: $white-colour;
+        }
+
+        .btn {
+            position: absolute;
+            right: 4px;
+            padding: 14px 50px;
+            top: 4px;
+
+            @include respond-to("xxl") {
+                padding: 14px 40px;
+            }
+
+            @include respond-to("smm") {
+                padding: 14px 30px;
+            }
+        }
+    }
+
+    .footer-text {
+        padding-top: 40px;
+
+
+        h4 {
+            font-size: 26px;
+            color: $white-colour;
+            padding-bottom: 13px;
+
+            a {
+                color: $white-colour;
+                @include transition;
+
+                &:hover {
+                    color: $second-color;
+                }
+            }
+        }
+    }
+
+    .useful-link {
+        @include respond-to("lg") {
+            padding-top: 40px;
+        }
+
+        h3 {
+            color: $white-colour;
+            font-size: 26px;
+            position: relative;
+            margin-bottom: 30px;
+            font-weight: bold;
+
+            @include respond-to("smm") {
+                font-size: 22px;
+            }
+
+            &::before {
+                content: " ";
+                position: absolute;
+                width: 70px;
+                height: 1px;
+                background-color: $second-color;
+                bottom: -3px;
+            }
+        }
+
+        ul {
+            li:not(:last-child) {
+                padding-bottom: 20px;
+
+                @include respond-to("sm") {
+                    padding-bottom: 14px;
+                }
+            }
+
+            a {
+                color: $light-colour;
+                @include transition;
+
+                &:hover {
+                    color: $second-color;
+                }
+            }
+        }
+    }
+
+    .copy-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 45px;
+        padding-top: 70px;
+
+        @include respond-to("md") {
+            padding-bottom: 25px;
+            padding-top: 50px;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+body.two {
+    footer {
+        background-color: $drak-color;
+
+        form#subscribe-form {
+
+            .btn {
+                position: absolute;
+                right: 4px;
+                padding: 18px 50px;
+                top: 4px;
+
+                @include respond-to("smm") {
+                    padding: 18px 30px;
+                }
+            }
+        }
+
+        .useful-link {
+
+            h3 {
+
+                &::before {
+                    background-color: $theme2-colour;
+                }
+            }
+
+            ul {
+                li:not(:last-child) {
+                    padding-bottom: 20px;
+
+                    @include respond-to("sm") {
+                        padding-bottom: 14px;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        color: $theme2-colour;
+                    }
+                }
+            }
+        }
+
+        .footer-text {
+            h4 {
+                a {
+                    &:hover {
+                        color: $theme2-colour;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.three {
+    footer {
+        @include respond-to("lg") {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form#subscribe-form {
+
+
+            .btn {
+                position: absolute;
+                right: 4px;
+                padding: 18px 50px;
+                top: 4px;
+
+                @include respond-to("smm") {
+                    padding: 18px 30px;
+                }
+            }
+        }
+
+        .useful-link {
+
+            h3 {
+
+                &::before {
+                    background-color: $theme3-colour;
+                }
+            }
+
+            ul {
+                li:not(:last-child) {
+                    padding-bottom: 20px;
+
+                    @include respond-to("sm") {
+                        padding-bottom: 14px;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        color: $theme3-colour;
+                    }
+                }
+            }
+        }
+
+        .footer-text {
+            h4 {
+                a {
+                    &:hover {
+                        color: $theme3-colour;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img.shap2 {
+    right: 4%;
+    position: absolute;
+    width: 120px;
+    top: 30%;
+    animation: shap-rotate 28s infinite;
+
+    @include respond-to("xxl") {
+        right: 2%;
+        width: 110px;
+    }
+
+    @include respond-to("xl") {
+        width: 100px;
+        top: 64%;
+    }
+}

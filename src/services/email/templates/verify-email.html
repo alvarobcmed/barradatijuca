@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Confirme seu Email</h1>
+
+<p>Olá {{name}},</p>
+
+<p>Para ativar sua conta no Stry Live, confirme seu endereço de email clicando no botão abaixo:</p>
+
+<a href="{{verification_url}}" class="button">Confirmar Email</a>
+
+<p>Se você não solicitou esta verificação, ignore este email.</p>
+
+<p>O link expira em 24 horas.</p>
+{% endblock %}

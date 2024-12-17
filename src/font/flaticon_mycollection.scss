@@ -1,0 +1,237 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.woff2?6bf174e2f2133f1bfa326e617bdf2f5e") format("woff2"),
+url("./flaticon_mycollection.woff?6bf174e2f2133f1bfa326e617bdf2f5e") format("woff"),
+url("./flaticon_mycollection.eot?6bf174e2f2133f1bfa326e617bdf2f5e#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.ttf?6bf174e2f2133f1bfa326e617bdf2f5e") format("truetype"),
+url("./flaticon_mycollection.svg?6bf174e2f2133f1bfa326e617bdf2f5e#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "location": "\f101",
+    "search": "\f102",
+    "facebook": "\f103",
+    "twitter": "\f104",
+    "instagram": "\f105",
+    "paper-plane": "\f106",
+    "calendar": "\f107",
+    "comment": "\f108",
+    "right-arrow": "\f109",
+    "pinterest": "\f10a",
+    "iphone": "\f10b",
+    "mail-inbox-app": "\f10c",
+    "share": "\f10d",
+    "quotation-mark": "\f10e",
+    "plus": "\f10f",
+    "smart-phone": "\f110",
+    "dots": "\f111",
+    "pin": "\f112",
+    "love": "\f113",
+    "iphone-1": "\f114",
+    "envelope": "\f115",
+    "time": "\f116",
+    "tick": "\f117",
+    "electronics": "\f118",
+    "call": "\f119",
+    "call-1": "\f11a",
+    "smart-watch": "\f11b",
+    "iphone-charger": "\f11c",
+    "voice-bot": "\f11d",
+    "form": "\f11e",
+    "successful": "\f11f",
+    "google": "\f120",
+    "technology": "\f121",
+    "camera-drone": "\f122",
+    "remote-control": "\f123",
+    "thunderbolt": "\f124",
+    "logo": "\f125",
+    "price-up": "\f126",
+    "cyber-security": "\f127",
+    "live-chat": "\f128",
+    "customer-service": "\f129",
+    "cross-functional": "\f12a",
+    "creative-thinking": "\f12b",
+    "function": "\f12c",
+    "user-experience": "\f12d",
+    "view": "\f12e",
+    "data": "\f12f",
+    "apple": "\f130",
+    "google-play": "\f131",
+    "mobile-development": "\f132",
+    "battery": "\f133",
+    "car": "\f134",
+    "bolt": "\f135",
+);
+
+.flaticon-location:before {
+    content: map-get($flaticon_mycollection-map, "location");
+}
+.flaticon-search:before {
+    content: map-get($flaticon_mycollection-map, "search");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_mycollection-map, "facebook");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_mycollection-map, "twitter");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_mycollection-map, "instagram");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon_mycollection-map, "paper-plane");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon_mycollection-map, "calendar");
+}
+.flaticon-comment:before {
+    content: map-get($flaticon_mycollection-map, "comment");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow");
+}
+.flaticon-pinterest:before {
+    content: map-get($flaticon_mycollection-map, "pinterest");
+}
+.flaticon-iphone:before {
+    content: map-get($flaticon_mycollection-map, "iphone");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon_mycollection-map, "mail-inbox-app");
+}
+.flaticon-share:before {
+    content: map-get($flaticon_mycollection-map, "share");
+}
+.flaticon-quotation-mark:before {
+    content: map-get($flaticon_mycollection-map, "quotation-mark");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon_mycollection-map, "plus");
+}
+.flaticon-smart-phone:before {
+    content: map-get($flaticon_mycollection-map, "smart-phone");
+}
+.flaticon-dots:before {
+    content: map-get($flaticon_mycollection-map, "dots");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon_mycollection-map, "pin");
+}
+.flaticon-love:before {
+    content: map-get($flaticon_mycollection-map, "love");
+}
+.flaticon-iphone-1:before {
+    content: map-get($flaticon_mycollection-map, "iphone-1");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon_mycollection-map, "envelope");
+}
+.flaticon-time:before {
+    content: map-get($flaticon_mycollection-map, "time");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon_mycollection-map, "tick");
+}
+.flaticon-electronics:before {
+    content: map-get($flaticon_mycollection-map, "electronics");
+}
+.flaticon-call:before {
+    content: map-get($flaticon_mycollection-map, "call");
+}
+.flaticon-call-1:before {
+    content: map-get($flaticon_mycollection-map, "call-1");
+}
+.flaticon-smart-watch:before {
+    content: map-get($flaticon_mycollection-map, "smart-watch");
+}
+.flaticon-iphone-charger:before {
+    content: map-get($flaticon_mycollection-map, "iphone-charger");
+}
+.flaticon-voice-bot:before {
+    content: map-get($flaticon_mycollection-map, "voice-bot");
+}
+.flaticon-form:before {
+    content: map-get($flaticon_mycollection-map, "form");
+}
+.flaticon-successful:before {
+    content: map-get($flaticon_mycollection-map, "successful");
+}
+.flaticon-google:before {
+    content: map-get($flaticon_mycollection-map, "google");
+}
+.flaticon-technology:before {
+    content: map-get($flaticon_mycollection-map, "technology");
+}
+.flaticon-camera-drone:before {
+    content: map-get($flaticon_mycollection-map, "camera-drone");
+}
+.flaticon-remote-control:before {
+    content: map-get($flaticon_mycollection-map, "remote-control");
+}
+.flaticon-thunderbolt:before {
+    content: map-get($flaticon_mycollection-map, "thunderbolt");
+}
+.flaticon-logo:before {
+    content: map-get($flaticon_mycollection-map, "logo");
+}
+.flaticon-price-up:before {
+    content: map-get($flaticon_mycollection-map, "price-up");
+}
+.flaticon-cyber-security:before {
+    content: map-get($flaticon_mycollection-map, "cyber-security");
+}
+.flaticon-live-chat:before {
+    content: map-get($flaticon_mycollection-map, "live-chat");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon_mycollection-map, "customer-service");
+}
+.flaticon-cross-functional:before {
+    content: map-get($flaticon_mycollection-map, "cross-functional");
+}
+.flaticon-creative-thinking:before {
+    content: map-get($flaticon_mycollection-map, "creative-thinking");
+}
+.flaticon-function:before {
+    content: map-get($flaticon_mycollection-map, "function");
+}
+.flaticon-user-experience:before {
+    content: map-get($flaticon_mycollection-map, "user-experience");
+}
+.flaticon-view:before {
+    content: map-get($flaticon_mycollection-map, "view");
+}
+.flaticon-data:before {
+    content: map-get($flaticon_mycollection-map, "data");
+}
+.flaticon-apple:before {
+    content: map-get($flaticon_mycollection-map, "apple");
+}
+.flaticon-google-play:before {
+    content: map-get($flaticon_mycollection-map, "google-play");
+}
+.flaticon-mobile-development:before {
+    content: map-get($flaticon_mycollection-map, "mobile-development");
+}
+.flaticon-battery:before {
+    content: map-get($flaticon_mycollection-map, "battery");
+}
+.flaticon-car:before {
+    content: map-get($flaticon_mycollection-map, "car");
+}
+.flaticon-bolt:before {
+    content: map-get($flaticon_mycollection-map, "bolt");
+}

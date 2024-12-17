@@ -1,0 +1,37 @@
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition {
+    transition: .5s ease-in-out;
+}
+
+@mixin content($opacity) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: $opacity;
+    left: 0;
+    height: 100%;
+}
+
+$breakpoints: (
+    "xxs": 380px,
+    "xs": 410px,
+    "smm": 450px,
+    "sm": 480px,
+    "mdd": 556px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+);
+
+@mixin respond-to($breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

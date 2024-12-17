@@ -1,0 +1,196 @@
+ .benefits-watch {
+     position: relative;
+     padding: 80px 0;
+
+     &:before {
+         content: "";
+         position: absolute;
+         width: 44%;
+         height: 100%;
+         background-color: #ffffff;
+         border-radius: 450px;
+         top: 0;
+         right: 8%;
+
+         @include respond-to("xxl") {
+             width: 50%;
+             top: 0;
+             right: 4%;
+         }
+
+         @include respond-to("lg") {
+             display: none;
+         }
+     }
+
+     .heading.two {
+         p {
+             width: 90%;
+         }
+     }
+ }
+
+ .watch-img {
+     position: relative;
+     z-index: 111;
+
+     img {
+         width: 100%;
+     }
+
+     img {
+         @include respond-to("xxl") {
+             width: 91%;
+             margin-left: 33px;
+         }
+     }
+
+     @include respond-to("lg") {
+         margin-top: 40px;
+     }
+
+     .map-pin {
+         width: 26px;
+         height: 26px;
+         display: inline-flex;
+         border-radius: 100px;
+         background-color: $white-colour;
+         border: 6px solid $theme2-colour;
+         position: absolute;
+
+         .location {
+             height: auto;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-between;
+             position: absolute;
+             bottom: 20px;
+             left: -105px;
+             opacity: 0;
+             visibility: hidden;
+
+             &:before {
+                 content: "";
+                 width: 0;
+                 height: 0;
+                 border-left: 10px solid transparent;
+                 border-right: 10px solid transparent;
+                 border-top: 10px solid $theme2-colour;
+                 position: absolute;
+                 bottom: -9px;
+                 left: 50%;
+                 transform: translateX(-50%);
+             }
+         }
+     }
+
+     .location {
+         @include transition;
+
+         .data {
+             width: 222px;
+             padding: 20px;
+             background-color: $theme2-colour;
+
+             p {
+                 font-size: 18px;
+                 line-height: 22px;
+                 font-weight: 600;
+                 color: $drak-color;
+             }
+         }
+     }
+
+     ul {
+         li:nth-child(1) {
+             bottom: 6%;
+             left: 66%;
+
+             @include respond-to("xxl") {
+                 bottom: 2%;
+                 left: 60%;
+             }
+         }
+
+         li:nth-child(2) {
+             top: 36%;
+             right: 4%;
+
+             @include respond-to("xxl") {
+                 top: 36%;
+                 right: 0%;
+             }
+         }
+
+         @include respond-to("sm") {
+             top: 36%;
+             right: 54%;
+         }
+     }
+
+     li:nth-child(3) {
+         bottom: 35%;
+         left: 63%;
+     }
+
+     li:nth-child(4) {
+         top: 54%;
+         right: 57%;
+     }
+ }
+
+ .map-pin.active {
+     .location {
+         opacity: 1;
+         visibility: visible;
+         bottom: 35px;
+     }
+ }
+
+ body.three {
+     .benefits-watch {
+         padding-bottom: 60px;
+     }
+
+     .watch-img.three {
+         ul {
+             li {
+                 &:nth-child(1) {
+                     bottom: 46%;
+                     left: 18%;
+                 }
+
+                 &:nth-child(2) {
+                     top: 20%;
+                     right: 19%;
+                 }
+             }
+         }
+
+         .map-pin {
+             border: 6px solid $theme3-colour;
+
+             .location {
+
+                 &:before {
+                     border-top: 10px solid $theme3-colour;
+                 }
+             }
+         }
+
+         .location {
+             .data {
+                 background-color: $theme3-colour;
+
+                 p {
+                     color: $white-colour;
+                 }
+             }
+         }
+     }
+
+ }
+
+ .compensate-for-scrollbar {
+     margin-right: 0 !important;
+ }

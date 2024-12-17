@@ -1,0 +1,114 @@
+.blog-one {
+    border-bottom: 1px solid #bbbbbb;
+
+    @include respond-to("lg") {
+        margin-bottom: 40px;
+    }
+
+    .blog-text {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        h4 {
+            font-size: 20px;
+            width: 66%;
+            line-height: 30px;
+            color: $white-colour;
+            font-weight: bold;
+
+            @include respond-to("xxl") {
+                font-size: 18px
+            }
+
+            a {
+                @include transition;
+            }
+
+            &:hover {
+                a {
+                    color: $second-color;
+                }
+            }
+        }
+
+        span {
+            color: $second-color;
+            font-size: 20px;
+            font-weight: bold;
+            border-left: 1px solid #bbbbbb;
+            padding-left: 30px;
+            padding-bottom: 52px;
+
+            @include respond-to("xxl") {
+                font-size: 18px;
+            }
+
+            @include respond-to("xl") {
+                padding-bottom: 80px;
+            }
+
+            @include respond-to("md") {
+                padding-bottom: 60px;
+            }
+
+            @include respond-to("xs") {
+                padding-bottom: 80px;
+            }
+        }
+    }
+
+
+}
+
+body.two {
+    .blog-one {
+        .blog-text {
+            h4 {
+                &:hover {
+                    a {
+                        color: $drak-color;
+                    }
+                }
+            }
+
+            span {
+                color: #787878;
+            }
+        }
+    }
+}
+
+body.three {
+    .blog-one {
+        .blog-text {
+            h4 {
+                &:hover {
+                    a {
+                        color: $drak-color;
+                    }
+                }
+            }
+
+            span {
+                color: #787878;
+            }
+        }
+    }
+}
+
+.blog-text h4 a {
+
+    -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
+    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
+    padding: 0.1% 0px;
+    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-size: 0px 2px;
+    background-position: 0px 95%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.blog-text h4 a:hover {
+    background-size: 100% 2px;
+}

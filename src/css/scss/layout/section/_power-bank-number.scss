@@ -1,0 +1,45 @@
+ .power-bank-number {
+     .count-text {
+         text-align: center;
+
+         &:hover {
+             i {
+                 background-color: $theme3-colour;
+                 color: $white-colour;
+
+                 &:before {
+                     animation: top-bottom 1s infinite;
+                 }
+             }
+         }
+
+         @include respond-to("lg") {
+             margin-bottom: 40px;
+         }
+
+         i {
+             @include transition;
+             font-size: 60px;
+             background-color: #f3f3f3;
+             width: 100px;
+             height: 100px;
+             @include flexcenter;
+             border-radius: 50%;
+             margin: auto;
+             margin-bottom: 30px;
+         }
+
+         h2 {
+             font-weight: bold;
+             color: $theme3-colour;
+
+             @include respond-to("sm") {
+                 font-size: 40px;
+             }
+         }
+
+         p {
+             font-size: 14px;
+         }
+     }
+ }

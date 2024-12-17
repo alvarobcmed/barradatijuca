@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Recibo Mensal</h1>
+
+<p>Olá {{name}},</p>
+
+<p>Segue o recibo referente ao período de {{billing_period}}.</p>
+
+<div style="background: #F3F4F6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+  <h3 style="margin-top: 0;">Detalhes do Pagamento</h3>
+  <p><strong>Plano:</strong> {{plan_name}}</p>
+  <p><strong>Valor:</strong> R$ {{amount}}</p>
+  <p><strong>Data:</strong> {{payment_date}}</p>
+  <p><strong>Método:</strong> {{payment_method}}</p>
+  <p><strong>Número do Recibo:</strong> {{receipt_number}}</p>
+</div>
+
+<a href="{{invoice_url}}" class="button">Baixar Nota Fiscal</a>
+
+<p>A nota fiscal correspondente será enviada em um email separado.</p>
+{% endblock %}

@@ -1,0 +1,39 @@
+.breadcrumb {
+    position: relative;
+
+    li.breadcrumb-item {
+        text-transform: capitalize;
+
+        @include respond-to("sm") {
+            font-size: 14px;
+        }
+
+        a {
+            color: #c6c6c6;
+            @include transition;
+
+            &:hover {
+                color: $second-color;
+            }
+
+            @include respond-to("sm") {
+                font-size: 14px;
+            }
+        }
+    }
+
+    li.breadcrumb-item.active {
+        color: #c6c6c6;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: var(--bs-breadcrumb-divider, "-") !important;
+        color: #c6c6c6;
+    }
+
+    padding-top: 10px;
+
+    @include respond-to("xl") {
+        padding-top: 0;
+    }
+}

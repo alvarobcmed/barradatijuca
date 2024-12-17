@@ -1,0 +1,283 @@
+.pricing {
+    background-color: #f3f3f3;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+
+    img.shap1 {
+        bottom: 45%;
+        left: 3%;
+        width: 130px;
+    }
+}
+
+.pricing-table {
+    padding: 40px;
+    position: relative;
+    background-color: $white-colour;
+    overflow: hidden;
+    z-index: 11;
+
+    &:hover {
+        &:before {
+            background-color: $second-color;
+        }
+
+        .table-head>i {
+
+            &:before {
+                animation: top-bottom 1s infinite;
+            }
+        }
+    }
+
+    @include respond-to("xl") {
+        padding: 30px;
+    }
+
+    &:before {
+        @include transition;
+        content: "";
+        position: absolute;
+        width: 514px;
+        height: 514px;
+        background-color: $theme-colour;
+        left: -20%;
+        top: -31%;
+        border-radius: 50%;
+        border: 19px solid #f3f3f3;
+
+        @include respond-to("xxl") {
+            width: 444px;
+            height: 444px;
+            left: -20%;
+            top: -27%;
+
+        }
+
+        @include respond-to("xl") {
+            width: 400px;
+            height: 400px;
+            left: -28%;
+            top: -25%;
+        }
+
+        @include respond-to("lg") {
+            left: -14%;
+            top: -21%;
+        }
+
+        @include respond-to("md") {
+            width: 635px;
+            height: 400px;
+        }
+
+        @include respond-to("mdd") {
+            width: 600px;
+        }
+
+        @include respond-to("smm") {
+            width: 500px;
+        }
+
+        @include respond-to("xs") {
+            width: 400px;
+        }
+    }
+
+    .table-head {
+        position: relative;
+
+        span {
+            color: $white-colour;
+            font-weight: bold;
+            padding-bottom: 10px;
+            display: block;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 90px;
+            color: $white-colour;
+            line-height: 80px;
+            font-weight: bold;
+
+            @include respond-to("xxl") {
+                font-size: 70px;
+                line-height: 50px;
+            }
+
+            sup {
+                font-size: 50px;
+
+                @include respond-to("xxl") {
+                    font-size: 34px;
+                }
+            }
+        }
+
+        p {
+            color: $white-colour;
+        }
+
+        h6 {
+            color: $white-colour;
+            position: relative;
+            padding-left: 18px;
+            margin-top: 25px;
+
+            &:before {
+                content: ".";
+                font-size: 54px;
+                position: absolute;
+                line-height: 0;
+                top: -6px;
+                left: 0;
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            background-image: linear-gradient(180deg, #ec4c26, #ed2b46);
+            width: 90px;
+            height: 90px;
+            color: $white-colour;
+            border-radius: 50%;
+            font-size: 45px;
+            @include flexcenter;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.30);
+            bottom: -27%;
+
+            @include respond-to("xl") {
+
+                bottom: -34%;
+                right: -6%;
+            }
+        }
+
+    }
+
+    @at-root {
+        ul.liststyle {
+            padding-top: 95px;
+
+            li {
+                padding-bottom: 20px;
+                position: relative;
+                padding-left: 23px;
+
+                &::before {
+                    width: 11px;
+                    height: 10px;
+                    background-color: $second-color;
+                    content: "";
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 7px;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn.two {
+        background-color: #fdeaec;
+        background-image: none;
+        color: $drak-color;
+
+        &:hover {
+            background-color: $second-color;
+            color: $white-colour;
+        }
+    }
+}
+
+.pricing-table.two {
+    @include respond-to("lg") {
+        margin-bottom: 30px;
+    }
+
+    @include respond-to("md") {
+        margin-top: 30px;
+    }
+
+    &:before {
+        background-color: $second-color;
+    }
+}
+
+body.two {
+    ul.liststyle {
+        li {
+            &::before {
+                background-color: $theme2-colour;
+            }
+        }
+    }
+
+}
+
+body.three {
+    .pricing-table {
+        &:hover {
+            &:before {
+                background-color: $theme3-colour;
+            }
+        }
+
+        &:before {
+            background-color: #06053e;
+        }
+
+        .table-head {
+            i {
+                background-image: linear-gradient(180deg, $theme3-colour, $theme3-colour);
+            }
+        }
+
+        .btn.two {
+            &:hover {
+                background-color: $theme3-colour;
+                color: $white-colour;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .pricing-table.two {
+        &::before {
+            background-color: $theme3-colour;
+        }
+
+        .btn {
+            &:after {
+                background-color: $theme3-colour;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+body.three {
+    ul.liststyle {
+
+        li {
+
+            &::before {
+                background-color: $theme3-colour ;
+            }
+        }
+    }
+}

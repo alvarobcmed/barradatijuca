@@ -1,0 +1,207 @@
+.accordion-section {
+    background-color: #f5f6fa;
+    padding-top: 92px;
+
+    @include respond-to("lg") {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include respond-to("md") {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .heading.two {
+        padding-top: 80px;
+        width: 90%;
+        margin: 0;
+
+        @include respond-to("lg") {
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+}
+
+.accordion {
+    width: 100%;
+
+    .content {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $medium-drak;
+        }
+
+        margin-bottom: 20px;
+        padding: 12px 0px;
+        padding-top: 0px;
+        border: 0;
+    }
+
+    .title {
+        text-align: start;
+        padding: 24px;
+        padding-right: 0;
+        color: $drak-color;
+        font-size: 20px;
+        padding-left: 0;
+        font-weight: 700;
+        border-bottom: 1px solid #d1d1d1;
+        border-radius: 0 !important;
+        background-color: #f5f6fa;
+    }
+
+    .accordion-item:first-of-type {
+        border-radius: 0;
+    }
+
+    .accordion-item.active {
+        .heading {
+            color: $drak-color;
+        }
+
+        .icon {
+            &:after {
+                width: 0;
+            }
+
+            &:before {
+                background: $drak-color;
+            }
+        }
+
+        .title {
+            background-color: transparent;
+            border: 0;
+            padding-bottom: 14px;
+        }
+
+        background-color: transparent;
+        border: 0;
+        border-bottom: 3px solid $medium-drak;
+        border-radius: 0;
+    }
+
+    .accordion-item {
+        border: 0;
+
+        &:last-of-type {
+            border-bottom: 0 !important;
+        }
+
+        .heading {
+            width: 100%;
+            display: block;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: $drak-color;
+            font-weight: 700;
+            font-size: 20px;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            padding-bottom: 0px;
+        }
+
+        .icon {
+            display: block;
+            position: absolute;
+            top: 47%;
+            width: 1.4rem;
+            height: 1.4rem;
+            transform: translateY(-50%);
+            right: 1px;
+            background-color: transparent;
+
+            &:before {
+                content: "";
+                width: 20px;
+                height: 1px;
+                background: $drak-color;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transition: 0.3s ease-in-out;
+                transform: translate(-50%, -50%);
+            }
+
+            &:after {
+                content: "";
+                width: 20px;
+                height: 1px;
+                background: $drak-color;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transition: 0.3s ease-in-out;
+                transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%) rotate(90deg);
+                z-index: -1;
+            }
+        }
+
+        .content {
+            display: none;
+        }
+    }
+
+    .accordion-img {
+        figure.accordion-img-two {
+            background-color: $drak-color;
+            margin-top: -156px;
+            margin-left: 130px;
+        }
+
+        position: relative;
+
+        img.dots {
+            top: auto;
+            z-index: -0;
+            right: -5%;
+            bottom: 0;
+        }
+    }
+
+}
+
+.accordion-img {
+    img {
+        @include respond-to("xl") {
+            width: 100%;
+            padding-top: 140px;
+        }
+
+        @include respond-to("lg") {
+            display: none;
+        }
+    }
+}
+
+body.three {
+    .accordion-section {
+        padding-top: 120px;
+
+        .heading.two {
+            padding-top: 0px;
+        }
+    }
+
+    .accordion-section.for {
+        @include respond-to("lg") {
+            padding-top: 60px;
+        }
+
+        .accordion-img {
+            margin-top: 120px;
+
+            @include respond-to("xxl") {
+                margin-top: 60px;
+            }
+
+            @include respond-to("lg") {
+                margin: 0;
+            }
+        }
+    }
+}

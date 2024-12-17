@@ -1,0 +1,116 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: promix | HTML Template
+    Author:  winsfolio
+    Support:  winsfolio
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+	-----------------
+    01. utils CSS
+	-----------------
+	
+		1.01 Root
+		1.02 mixin 
+
+	-----------------
+    02. COMPONENTS CSS
+	-----------------
+
+		2.01 custom-text
+		2.02 btn
+		2.03 scroll-top  
+		2.04 hover-img-two 
+		2.05 icon
+		2.06 heading
+		2.07 accordion
+		2.08 breadcrumb
+		2.09 theme-pagination
+		2.10 loader  
+
+        
+	-----------------
+    03. HEADER CSS
+	-----------------
+
+		3.01 Header 1 
+
+    ---------------------------------
+	04. FOOTER CSS
+	---------------------------------
+		 
+		4.01 footer 1 
+
+	---------------------------------
+	05. SECTIONS CSS
+	---------------------------------
+		  
+	    5.01 partner
+	    5.02 hero-section
+	    5.03 about-text 
+	    5.04 form
+	    5.05 powerful
+	    5.06 team
+	    5.07 vertical-shooting
+	    5.08 weekly-newsletter
+	    5.09 pricing
+	    5.10 clients
+	    5.11 blog
+	    5.12 hero-section-two
+	    5.13 smartwatch
+	    5.14 about-two
+	    5.15 watch-features
+	    5.16 benefits-watch
+	    5.17 about-img-three
+	    5.18 power-bank-number
+	    5.19 herothree   
+
+	---------------------------------
+	06. PAGES CSS
+	---------------------------------
+	
+		6.01 bannr
+	    6.02 news-details
+
+
+--------------------------------------------------------------------------------------------------- */
+
+
+@import "scss/utils/root";
+@import "scss/utils/mixin";
+@import "scss/components/custom-text";
+@import "scss/components/btn";
+@import "scss/components/scroll-top";
+@import "scss/components/hover-img-two";
+@import "scss/components/icon";
+@import "scss/components/heading";
+@import "scss/components/accordion";
+@import "scss/components/breadcrumb";
+@import "scss/components/theme-pagination";
+@import "scss/components/loader";
+@import "scss/layout/header/header";
+@import "scss/layout/footer/footer";
+@import "scss/layout/section/partner";
+@import "scss/layout/section/hero-section";
+@import "scss/layout/section/about-text";
+@import "scss/layout/section/form";
+@import "scss/layout/section/powerful";
+@import "scss/layout/section/team";
+@import "scss/layout/section/vertical-shooting";
+@import "scss/layout/section/weekly-newsletter";
+@import "scss/layout/section/pricing";
+@import "scss/layout/section/clients";
+@import "scss/layout/section/blog";
+@import "scss/layout/section/hero-section-two";
+@import "scss/layout/section/smartwatch";
+@import "scss/layout/section/about-two";
+@import "scss/layout/section/watch-features";
+@import "scss/layout/section/benefits-watch";
+@import "scss/layout/section/about-img-three";
+@import "scss/layout/section/power-bank-number";
+@import "scss/layout/section/herothree";
+@import "scss/layout/page-banner/bannr";
+@import "scss/layout/pages/news-details";

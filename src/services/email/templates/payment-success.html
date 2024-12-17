@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Pagamento Confirmado</h1>
+
+<p>Olá {{name}},</p>
+
+<p>Seu pagamento de R$ {{amount}} foi confirmado com sucesso!</p>
+
+<div style="background: #F3F4F6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+  <h3 style="margin-top: 0;">Detalhes do Pagamento</h3>
+  <p><strong>Plano:</strong> {{plan_name}}</p>
+  <p><strong>Valor:</strong> R$ {{amount}}</p>
+  <p><strong>Data:</strong> {{payment_date}}</p>
+  <p><strong>Próxima cobrança:</strong> {{next_payment_date}}</p>
+</div>
+
+<p>Sua nota fiscal será enviada em um email separado em até 24 horas.</p>
+
+<a href="{{invoice_url}}" class="button">Ver Recibo</a>
+{% endblock %}

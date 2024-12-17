@@ -1,0 +1,40 @@
+ .smartwatch {
+     position: relative;
+
+     @include respond-to("lg") {
+         margin-bottom: 20px;
+     }
+
+     a {
+         color: #fff;
+         position: absolute;
+         bottom: 6px;
+         z-index: 1;
+         left: 50%;
+         font-size: 22px;
+         font-weight: bold;
+         transform: translate(-50%, -50%);
+         width: max-content;
+         text-transform: capitalize;
+         @include transition;
+
+         &:hover {
+             color: $theme2-colour;
+         }
+
+         @include respond-to("xxl") {
+             font-size: 20px;
+         }
+
+         @include respond-to("xl") {
+             font-size: 18px;
+         }
+     }
+
+     img {
+         @include respond-to("xxl") {
+             width: 100%;
+         }
+     }
+
+ }

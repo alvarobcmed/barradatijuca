@@ -1,0 +1,90 @@
+@keyframes top-bottom {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+.powerful {
+    background-color: #f3f3f3;
+    padding: 50px;
+    text-align: center;
+    @include transition;
+
+    @include respond-to("xl") {
+        padding: 30px;
+    }
+
+    @include respond-to("lg") {
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        background-color: $second-color;
+        color: $white-colour;
+
+        h5 {
+            color: $white-colour;
+        }
+
+        >i {
+            display: block;
+            animation: top-bottom 1s infinite;
+        }
+    }
+
+    >i {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    h5 {
+        font-size: 28px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        @include transition;
+
+        @include respond-to("xxl") {
+            font-size: 22px;
+        }
+    }
+
+    a {
+        background-color: #fff;
+        padding: 14px 34px;
+        border-radius: 50px;
+        font-weight: bold;
+        display: inline-block;
+        color: $drak-color;
+        border: 1px solid #fff;
+        @include transition;
+
+        &:hover {
+            border: 1px solid #000;
+        }
+
+        i {
+            padding-left: 12px;
+        }
+    }
+
+}

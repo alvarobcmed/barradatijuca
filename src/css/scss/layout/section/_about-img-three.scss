@@ -1,0 +1,53 @@
+  .about-img-three {
+      position: relative;
+
+      .hover-img-two.two {
+          position: absolute;
+          right: 0;
+          top: -38%;
+          margin-top: 51px;
+
+          overflow: hidden;
+
+          @include respond-to("xxl") {
+              width: 307px;
+          }
+
+          @include respond-to("xs") {
+              width: 230px;
+          }
+
+          .hover-img-two .imgg {
+              @include respond-to("xxl") {
+                  width: 307px;
+              }
+          }
+      }
+
+      .hover-img-two.one {
+          margin-top: 100px;
+          overflow: hidden;
+          margin-left: 50px;
+          z-index: 11;
+          box-shadow: -15px -19px 72px 1px rgba(0, 0, 0, 0.15);
+          width: 430px;
+
+          @include respond-to("xxl") {
+              width: 307px;
+          }
+
+          @include respond-to("md") {
+              margin-left: 0px;
+          }
+
+          @include respond-to("xs") {
+              width: 240px;
+          }
+
+          .hover-img-two .imgg {
+              @include respond-to("xxl") {
+                  width: 307px;
+              }
+          }
+      }
+  }

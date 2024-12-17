@@ -1,0 +1,35 @@
+# Build settings
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "20", NODE_ENV = "production" }
+  functions = "netlify/functions"
+
+# Redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.stry.live/:splat"
+  status = 200
+  force = true
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = """
+      default-src 'self' https://*.stry.live https://*.stripe.com https://*.firebaseapp.com https://*.googleapis.com; \
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.stripe.com https://*.firebaseapp.com; \
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
+      img-src 'self' data: https://*.unsplash.com https://*.stripe.com https://raw.githubusercontent.com https://*.googleapis.com; \
+      font-src 'self' https://fonts.gstatic.com; \
+      connect-src 'self' https://*.stry.live https://*.stripe.com https://*.firebaseio.com https://*.googleapis.com wss://*.firebaseio.com; \
+      frame-src https://*.stripe.com https://*.firebaseapp.com"""
